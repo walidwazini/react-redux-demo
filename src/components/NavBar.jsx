@@ -21,7 +21,7 @@ const NavBarItem = ({ title, link }) => {
 const NavBar = ({ token }) => {
   const tokenState = useSelector((state) => state.auth.isToken);
   const userLogin = useSelector((state) => state.auth.userLogin);
-  console.log(tokenState);
+  // console.log(tokenState);
   return (
     <nav className='bg-white shadow dark:bg-gray-800'>
       <div className='container px-6 py-4 mx-auto md:flex md:justify-between md:items-center'>

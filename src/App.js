@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import NavBar from './components/NavBar';
+import AllProducts from './pages/AllProducts';
 
 
 function App() {
-  const authState = useSelector(state => state.auth)
-  const dispatch = useDispatch()
-
-  console.log(authState)
-
-
   return (
     <div className='bg-blue-900 h-screen w-screen' >
       <NavBar />
       <main>
         <Routes>
 
-          <Route path='/' element={
-            <h1>Hello</h1>
-          } />
-          {/* <Route path='/auth' element={<Auth />} /> */}
-
-          {/* <Route path='/places' element={<AllPlaces />} /> */}
+          <Route path='/' element={<AllProducts />} />
         </Routes>
       </main>
 
